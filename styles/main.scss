@@ -1,0 +1,100 @@
+@import 'colors';
+@import 'fonts';
+
+body {
+    background-color: $purple;
+}
+a {
+    text-decoration: none;
+}
+
+.main-title {
+    background-color: $black;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.barcelona-title {
+    font-family: $fontTitle;
+    text-align: center;
+    font-size: 6em;
+    color: $yellow;
+    letter-spacing: 10px;
+    margin: 0;
+}
+
+h3 {
+    font-family: $fontMain;
+    font-weight: 600;
+    color: $red;
+    text-align: center;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+/***************************
+HEADING
+****************************/
+
+header {
+    float: left;
+    margin: 0 0 30px 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+}    
+
+#logo {
+    text-align: center;
+    margin: 0;
+}
+/***************************
+NAVIGATION
+****************************/
+
+nav {
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0 0;
+
+    ul {
+        list-style: none;
+        margin: 0 10px;
+        padding: 0;
+        position: relative;
+    
+        li {
+            display: inline-block;
+        }
+    }
+
+    a {
+        padding: 15px 10px;
+        font-weight: 800;
+        color: $white;
+        text-transform: uppercase;
+        font-family: $fontMain;
+    }
+  
+    a:hover {
+        color: $yellow;
+    }  
+}
+
+.border-yellow, .border-red {
+    height: 8px;
+    margin: 0;
+}
+
+.border-yellow {
+    background-color: $yellow;
+}
+
+.border-red {
+    background-color: $red;
+}
+
+.selected {
+    color: $red;
+}
+
+@import 'responsive';
